@@ -2,7 +2,9 @@
   <div id="app">
     <!-- <slotApply/> -->
     <!-- <slotApplyOptions/> -->
-    <slotApplyLayout/>
+    <!-- <slotApplyLayout/> -->
+    <!-- <slotScope/> -->
+    <RenderLess/>
   </div>
 </template>
 
@@ -13,14 +15,21 @@
 // 2.使用 $options
 // import slotApplyOptions from './components/slot-apply-options/index';
 // 3.提升状态
-import slotApplyLayout from './components/slot-apply-layout/index';
+// import slotApplyLayout from './components/slot-apply-layout/index';
+// 4.作用域插槽
+// import slotScope from './components/slot-scope(作用域插槽)/index';
+// 5.https://juejin.im/post/5c2d7030f265da613a54236f#comment 函数式组件运用(提供业务逻辑，并非官方说的函数式组件)
+import RenderLess from './components/renderless/index';
+
 
 export default {
   name: 'App',
   components: {
     // slotApply,
     // slotApplyOptions
-    slotApplyLayout
+    // slotApplyLayout
+    // slotScope
+    RenderLess
   }
 }
 </script>
